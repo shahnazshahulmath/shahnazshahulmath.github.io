@@ -12,8 +12,26 @@
     header h1{font-size:1.6rem;margin:.2rem 0}
     .contact{font-size:.95rem;color:var(--muted);line-height:1.45}
    
-    
-  
+    /* Link colors */
+a {
+  color: var(--link);
+  text-decoration: underline;
+}
+a:visited {
+  color: var(--link-visited);
+}
+a:hover,
+a:focus {
+  color: var(--link-hover);
+  outline: none;
+}
+
+/* small visual cue for external links that open in new tab */
+a[target="_blank"]::after {
+  content: " ↗";
+  font-size:0.9em;
+  margin-left:0.15em;
+}  
   </style>
 </head>
 <body>
